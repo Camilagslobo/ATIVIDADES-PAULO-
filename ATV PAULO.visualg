@@ -1,0 +1,50 @@
+algoritmo "REVISÃO"
+
+var
+ salarioBruto: real 
+ salarioLiquido: real
+ descontoINSS: real 
+
+inicio
+
+  escreval("INSIRA SEU SÁLARIO SEM O DESCONTO DO INSS ")
+  leia(SalarioBruto)
+  se SalarioBruto <= 1621 entao 
+     descontoINSS <- salarioBruto * 0.075
+     salarioLiquido <- salarioBruto - descontoINSS
+     escreval("SEU SALÁRIO BRUTO: ", salarioBruto)
+     escreval("SEU SALÁRIO LÍQUIDO: ", salarioLiquido)
+     escreval("DESCONTO INSS: ", descontoINSS)
+     escreval("PELA SUA RENDA, VOCÊ SE ENQUADROU NA ALÍQUOTA DE 7,5% E NÃO TEVE DESUÇÃO NENHUM")
+    senao 
+    se SalarioBruto <= 2902.84 entao 
+     descontoINSS <- (salarioBruto * 0.09) - 24.32
+     salarioLiquido <- salarioBruto - descontoINSS
+     escreval("SEU SALÁRIO BRUTO: ", salarioBruto)
+     escreval("SEU SALÁRIO LÍQUIDO: ", salarioLiquido)
+     escreval("DESCONTO INSS: ", descontoINSS)
+     escreval("PELA SUA RENDA, VOCÊ SE ENQUADROU NA ALÍQUOTA DE 9% E HOUVE UMA DEDUÇÃO DE R$ 24,32")
+     senao 
+     se SalarioBruto <= 4354.27 entao 
+     descontoINSS <- (salarioBruto * 0.12) - 111.40
+     salarioLiquido <- salarioBruto - descontoINSS
+     escreval("SEU SALÁRIO BRUTO: ", salarioBruto)
+     escreval("SEU SALÁRIO LÍQUIDO: ", salarioLiquido)
+     escreval("DESCONTO INSS: ", descontoINSS)
+     escreval("PELA SUA RENDA, VOCÊ SE ENQUADROU NA ALÍQUOTA DE 12% E HOUVE UMA DEDUÇÃO DE R$ 24,32")
+     senao
+     se SalarioBruto <=  8475.55 entao 
+     descontoINSS <- (salarioBruto * 0.14) - 198.49
+     salarioLiquido <- salarioBruto - descontoINSS
+     escreval("SEU SALÁRIO BRUTO: ", salarioBruto)
+     escreval("SEU SALÁRIO LÍQUIDO: ", salarioLiquido)
+     escreval("DESCONTO INSS: ", descontoINSS)
+     escreval("PELA SUA RENDA, VOCÊ SE ENQUADROU NA ALÍQUOTA DE 14% E HOUVE UMA DEDUÇÃO DE R$ 24,32")
+     fimse
+    fimse
+  fimse
+fimse
+
+
+
+fimalgoritmo
